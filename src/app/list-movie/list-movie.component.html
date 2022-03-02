@@ -8,7 +8,7 @@
 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"  *ngFor="let movie of movies">
           <div class="card">
-            <a href="details.html">
+            <a [routerLink]="['/details', movie.id]">
               <img src="{{ movie.poster_path }}" />
               <p>{{ movie.title }}</p>
             </a>

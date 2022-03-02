@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import { ListMovieComponent } from './list-movie/list-movie.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TemplateComponent } from './template/template.component';
+import { DetailsComponent } from './details/details.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListMovieComponent,
-    TemplateComponent
+    TemplateComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
